@@ -13,15 +13,15 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-    <h1>Hi there!</h1>
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.js"></script>
+   <a-scene>
+  <a-assets>
+  <a-asset-item id="mtl" src="./materials.mtl"></a-asset-item>
+  <a-asset-item id="obj" src="./model.obj"></a-asset-item>
+  </a-assets>
     
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
+<a-entity obj-model="obj: #obj; mtl: #mtl;"></a-entity>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+</a-scene>
   </body>
 </html>
