@@ -85,7 +85,7 @@ h2{
 .snip1463:before,
 .snip1463 figcaption:after,
 .snip1463 figcaption:before {
-  background: #0a0a0a;
+  background: 	#F0FFFF;
   width: 25%;
   position: absolute;
   content: '';
@@ -190,5 +190,5 @@ h2{
 }
 /* Demo purposes only */
 body {
-  background-color: #212121;
+  background-color: 	#F0FFFF;
 }
