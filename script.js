@@ -3,3 +3,8 @@
 
 // prints "hi" in the browser's dev tools console
 console.log('hi');
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
