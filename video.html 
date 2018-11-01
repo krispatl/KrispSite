@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>kris pilcher</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  
+    <body>
+   
+    <h1>Kris Pilcher</h1>
+    
+    <p>
+   
+      
+   <p>
+     <figure class="snip1463"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2F_MG_9503.jpg?1541099035987" alt="sample49"/>
+  <figcaption>
+ </p>
+   
+  </figcaption>
+</figure>
+
+</figure>
+<figure class="snip1463"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2F_MG_9501.jpg?1541099034185" alt="sample63"/>
+  <figcaption>
+   
+  </figcaption>
+</figure>
+</figure>
+<figure class="snip1463"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2FCYDONia_KPILCHER.jpg?1541099078904" alt="sample63"/>
+  <figcaption>
+   
+  </figcaption>
+</figure>
+
+<figure class="snip1463"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2FNew%20LIFE%20NOW_KPILCHER.png?1541099101207" alt="sample63"/>
+  <figcaption>
+   
+  </figcaption>
+</figure>
+
+<figure class="snip1463"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2FResurgens.jpg?1541111347859" alt="sample63"/>
+  <figcaption>
+   
+  </figcaption>
+</figure>
+
+<figure class="snip1463"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2FID_KPILCHER.jpg?1541099074217" alt="sample63"/>
+  <figcaption>
+   
+  </figcaption>
+</figure>
+    <p>
+      
+<p>
+ <A HREF="/index.html">Home</A>
+  </body>
