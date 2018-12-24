@@ -8,7 +8,7 @@
 }
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 0em;
+  margin: 10em;
 }
 
 h1 {
@@ -78,7 +78,7 @@ h3{
 body {
   height: 110vh;
   padding: 0;
-  margin: 0px;
+  margin: 10px;
   background: 		#C0C0C0;
 }
 
@@ -205,7 +205,7 @@ svg{
   display: block;
   position: left;
   overflow: hidden; 
-  margin: 0 ;
+  margin: 10;
   background: white;
 }
 
