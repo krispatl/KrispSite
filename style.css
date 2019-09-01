@@ -214,12 +214,12 @@ body {
 
 h1 {
   font-style: bold;
-  color: #808080;
+  color: #d4d4d4;
 }
 
 h2{
   font-style: italic;
-  color: 	#808080; 
+  color: 	#d4d4d4; 
 }
   .myButton{
 	-moz-box-shadow: 3px 4px 0px 0px #899599;
@@ -279,7 +279,7 @@ h3{
 body {
   height: 110vh;
   padding: 0;
-  margin: 20px;
+  margin: 150px;
   background: 		#121111;
 }
 
