@@ -1,5 +1,4 @@
-
-  
+/* Video Background Styling */
 #myVideo {
   position: fixed;
   left: 0;
@@ -8,167 +7,125 @@
   min-height: 100%;
 }
 
-/* Add some content at the bottom of the video/page */
+/* Content Styling */
 .content {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
 }
 
-
-
-body
-{
+/* General Body Styling */
+body {
   margin: 0;
   padding: 0;
-  
-  /* make it look decent enough */
-  
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
+  background: black;
+  height: 150vh;
 }
 
-a
-{
+/* Link Styling */
+a {
   text-decoration: none;
   color: #e300d4;
-  
   transition: color 0.3s ease;
 }
 
-a:hover
-{
+a:hover {
   color: cyan;
 }
 
-
-
+/* Thumbnail Images */
 .thumbnail {
   max-width: 40%;
 }
 
-.italic { font-style: italic; }
-.small { font-size: 0.8em; }
-
-/** LIGHTBOX MARKUP **/
-
+/* Lightbox Styling */
 .lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-
-	/** Position and style */
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0);
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .lightbox img {
-	/** Pad the lightbox image */
-	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
-	outline: none;
-
-	/** Unhide lightbox **/
-	display: block;
+  outline: none;
+  display: block;
 }
 
-#gradient
-{
+/* Gradient Styling */
+#gradient {
   width: 150%;
   height: 1%;
-  padding: 0px;
-  margin: 0px;
-}
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 0em;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  font-style: bold;
-  color: #d4d4d4;
-}
-
-
-
-
-body {
-  height: 150vh;
-  padding: 10;
-  margin: 10px;
-  background: 		black;
-}
-
+/* SVG Animation */
 svg.intro {
   background: linear-gradient(135deg, #aa3bb1, #582a7e);
   max-width: 800px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   box-shadow: 0 30px 50px -20px #2e0642;
 }
+
 svg.intro .text {
   display: none;
 }
+
 svg.intro.go .text {
   font-family: Arial, sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   display: block;
 }
+
 svg.intro.go .text-stroke {
   fill: none;
   stroke: #51256f;
   stroke-width: 2.8px;
   stroke-dashoffset: -900;
   stroke-dasharray: 900;
-  stroke-linecap: butt;
-  stroke-linejoin: round;
-  -webkit-animation: dash 2.5s ease-in-out forwards;
-          animation: dash 2.5s ease-in-out forwards;
-}
-svg.intro.go .text-stroke:nth-child(2) {
-  -webkit-animation-delay: .3s;
-          animation-delay: .3s;
-}
-svg.intro.go .text-stroke:nth-child(3) {
-  -webkit-animation-delay: .9s;
-          animation-delay: .9s;
-}
-svg.intro.go .text-stroke-2 {
-  stroke: #f6bdfa;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-svg.intro.go .text-stroke:nth-child(5) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-svg.intro.go .text-stroke:nth-child(6) {
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  animation: dash 2.5s ease-in-out forwards;
 }
 
-@-webkit-keyframes dash {
-  100% {
-    stroke-dashoffset: 0;
-  }
+svg.intro.go .text-stroke:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+svg.intro.go .text-stroke:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+svg.intro.go .text-stroke-2 {
+  stroke: #f6bdfa;
+  animation-delay: 1.2s;
+}
+
+svg.intro.go .text-stroke:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+svg.intro.go .text-stroke:nth-child(6) {
+  animation-delay: 1.8s;
 }
 
 @keyframes dash {
@@ -176,6 +133,8 @@ svg.intro.go .text-stroke:nth-child(6) {
     stroke-dashoffset: 0;
   }
 }
+
+/* Reload Button */
 .reload {
   position: absolute;
   bottom: 15px;
@@ -183,7 +142,6 @@ svg.intro.go .text-stroke:nth-child(6) {
   background: #fff;
   border: none;
   border-radius: 20px;
-  outline: none !important;
   font-size: 11px;
   line-height: 1.5;
   padding: 8px 12px;
@@ -193,63 +151,44 @@ svg.intro.go .text-stroke:nth-child(6) {
   box-shadow: 0 6px 7px #350e4c;
   transition: all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
 }
+
 .reload:hover {
   box-shadow: 0 4px 4px #350e4c;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  transform: translateY(1px);
 }
+
 .reload:active {
   box-shadow: 0 1px 2px #244B94;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: translateY(2px);
 }
-.reload svg {
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
 
-
-
-
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
-
-
-body{
-  background: White;
-}
-/* The grid: Four equal columns that floats next to each other */
+/* Additional Styling for Grid and Images */
 .column {
   float: left;
   width: 25%;
   padding: 10px;
 }
 
-/* Style the images inside the grid */
 .column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .column img:hover {
   opacity: 1;
 }
 
-/* Clear floats after the columns */
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   position: relative;
   display: none;
 }
 
-/* Expanding image text */
 #imgtext {
   position: absolute;
   bottom: 15px;
@@ -258,7 +197,6 @@ body{
   font-size: 20px;
 }
 
-/* Closable button inside the image */
 .closebtn {
   position: absolute;
   top: 10px;
@@ -267,30 +205,22 @@ body{
   font-size: 35px;
   cursor: pointer;
 }
+
 .info {
   color: white;
-  font:1em/1 sans-serif;
+  font: 1em/1 sans-serif;
   text-align: left;
 }
 
-.info a{
+.info a {
   color: white;
 }
 
-svg{
-  width:150px;
+svg {
+  width: 150px;
   height: 30px;
   display: block;
-  position: left;
-  overflow: hidden; 
-  margin: 0
-  ;
+  overflow: hidden;
+  margin: 0;
   background: white;
 }
-
-
-/* Demo purposes only */
-body {
-  background-color: 	#00000
-}
- 
