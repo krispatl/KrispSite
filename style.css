@@ -25,8 +25,9 @@ body {
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
   background: black;
-  height: 150vh;
+  min-height: 100vh; /* This allows scrolling if content exceeds the screen */
 }
+
 
 /* Link Styling */
 a {
