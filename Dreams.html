@@ -12,17 +12,22 @@
       height: auto;
       min-height: 100%;
       overflow-y: auto;
+      font-family: sans-serif;
     }
     .content {
+      position: relative;
+      z-index: 1;
       padding: 2em;
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
     }
-    .video-container {
-      display: flex;
-      flex-direction: column;
-      gap: 2em;
-      margin-top: 2em;
+    nav {
+      margin-bottom: 2em;
+    }
+    iframe, img {
+      margin-top: 1em;
+      max-width: 100%;
+      height: auto;
     }
     .gallery {
       display: flex;
@@ -31,8 +36,7 @@
       margin-top: 2em;
     }
     .gallery img {
-      max-width: 45%;
-      height: auto;
+      width: 48%;
     }
   </style>
 </head>
@@ -71,19 +75,23 @@
       <a href="http://www.dreamcollectionagency.com/" target="_blank">dreamcollectionagency.com</a>
     </p>
 
-    <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/VOcHqjaURfM?autoplay=1" frameborder="0" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Lo22Igr0Zvk" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VOcHqjaURfM" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Lo22Igr0Zvk" frameborder="0" allowfullscreen></iframe>
 
     <h2>Gallery</h2>
     <p>More dream collection footage, installation stills, and immersive moments coming soon.</p>
 
     <div class="gallery">
-      <!-- Add your image URLs below -->
-      <img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce/dream1.jpg" alt="Dream Collection Scene 1">
-      <img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce/dream2.jpg" alt="Dream Recall Interface">
-      <!-- Repeat for more images -->
+      <img src="https://cdn.glitch.global/7ae153fc-835d-4ad5-92fa-43300e19bbce/dca1.jpeg?v=1742767005943" alt="Dream Image 1">
+      <img src="PLACEHOLDER-2.jpg" alt="Dream Image 2">
+      <img src="PLACEHOLDER-3.jpg" alt="Dream Image 3">
+      <img src="PLACEHOLDER-4.jpg" alt="Dream Image 4">
+      <img src="PLACEHOLDER-5.jpg" alt="Dream Image 5">
+      <img src="PLACEHOLDER-6.jpg" alt="Dream Image 6">
+      <img src="PLACEHOLDER-7.jpg" alt="Dream Image 7">
+      <img src="PLACEHOLDER-8.jpg" alt="Dream Image 8">
+      <img src="PLACEHOLDER-9.jpg" alt="Dream Image 9">
+      <img src="PLACEHOLDER-10.jpg" alt="Dream Image 10">
     </div>
   </div>
 </body>
