@@ -5,21 +5,42 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel="stylesheet" href="/style.css">
   <style>
     html, body {
       height: auto;
       min-height: 100%;
       overflow-y: auto;
+      font-family: sans-serif;
     }
     .content {
+      position: relative;
+      z-index: 1;
       padding: 2em;
       max-width: 900px;
       margin: 0 auto;
     }
+    nav {
+      margin-bottom: 2em;
+    }
+    iframe, img {
+      margin-top: 1em;
+      max-width: 100%;
+      height: auto;
+    }
     .thumbnail {
       margin-top: 1em;
+      max-width: 100%;
+    }
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin-top: 1em;
+    }
+    .image-grid a {
+      flex: 1 1 calc(50% - 1em);
     }
     .google-play-badge {
       width: 200px;
@@ -37,6 +58,7 @@
       <a href="index.html">Home// </a>
       <a href="/XR.html">XR// </a>
       <a href="/images.html">IRL// </a>
+       <a href="/blog.html">Research Blog// </a>
       <a href="/Dreams.html">Dreams// </a>
       <a href="/wishes.html">Wishes// </a>
       <a href="/video.html">Video// </a>
@@ -59,7 +81,6 @@
       <a href="https://creativeloafing.com/content-218738-Kris-Pilcher-curates-'Well-Wishes'-for-Atlanta" target="_blank">Read the Creative Loafing statement</a>
     </p>
 
-    <!-- Images and lightboxes -->
     <div class="image-grid">
       <a href="#img2"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce/image-GwHtqKHY55fz8w-large.png?1541114575832" class="thumbnail"></a>
       <a href="#img1"><img src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce/image-WAGPoo4no-YLWA-large.png?1541111470885" class="thumbnail"></a>
@@ -83,7 +104,7 @@
 
     <h2>Download the App</h2>
     <p>
-      Explore the digital version of Well Wishes as a mixed reality experience.
+      Explore the digital version of Well Wishes.
     </p>
     <a href="https://play.google.com/store/apps/details?id=com.MetaXR.Wellwishes&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
       <img class="google-play-badge" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">
