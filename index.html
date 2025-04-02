@@ -29,31 +29,97 @@
       z-index: 1;
       padding: 2rem;
       color: white;
+      font-family: 'Courier New', monospace;
+      margin-left: 320px; /* Make room for side modal */
+    }
+
+    a {
+      display: block;
+      margin: 0.25rem 0;
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     .popup-button {
-      margin: 1.5rem 0;
-      padding: 0.5rem 1rem;
+      margin: 2rem 0;
+      padding: 0.75rem 1.5rem;
       font-size: 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid white;
-      color: white;
+      background: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      border-radius: 6px;
       cursor: pointer;
-      transition: background 0.3s;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      font-weight: bold;
+      backdrop-filter: blur(4px);
     }
 
     .popup-button:hover {
-      background: rgba(255, 255, 255, 0.3);
+      background: rgba(0, 255, 255, 0.1);
+      box-shadow: 0 0 10px #00ffff66;
+    }
+
+    /* LEFT-SIDE MODAL STYLES */
+    .modal-left {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 100%;
+      background: #111;
+      border-right: 2px solid #00ffff;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 5px 0 20px #00ffff33;
+    }
+
+    .modal-left .modal-header {
+      padding: 0.5rem 1rem;
+      background: #000;
+      color: #00ffff;
+      font-weight: bold;
+      font-family: monospace;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-left .close-button {
+      background: transparent;
+      border: none;
+      color: #00ffff;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .modal-left .close-button:hover {
+      color: #ff00ff;
+    }
+
+    .modal-left iframe {
+      flex-grow: 1;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 
   <script>
-    function openPopup() {
-      window.open(
-        'https://krispykreme.glitch.me/',
-        'krisSitePopup',
-        'width=1000,height=800,resizable=yes,scrollbars=yes'
-      );
+    function openModal() {
+      document.getElementById('modalLeft').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modalLeft').style.display = 'none';
     }
   </script>
 </head>
@@ -64,8 +130,19 @@
     <source src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2Fwebfx2.mp4?v=1574055928265" type="video/mp4">
   </video>
 
+  <!-- Modal Side Panel -->
+  <div class="modal-left" id="modalLeft">
+    <div class="modal-header">
+      <span>krispykreme.glitch.me</span>
+      <button class="close-button" onclick="closeModal()">✖</button>
+    </div>
+    <iframe src="https://krispykreme.glitch.me/" title="Embedded Site"></iframe>
+  </div>
+
+  <!-- Main Content -->
   <div class="content">
     <h1>KRIS PILCHER</h1>
+
     <a href="/XR.html">XR// </a>
     <a href="/images.html">IRL// </a>
     <a href="/blog.html">Research Blog// </a>
@@ -75,8 +152,10 @@
     <a href="/curator.html">Curatorial// </a>
     <a href="/commercial.html">Commercial// </a>
     <a href="/About.html" target="_blank">About me</a>
+
+    <button class="popup-button" onclick="openModal()">Open Side Panel</button>
   </div>
-  <button class="popup-button" onclick="openPopup()">MY AI</button>
+
 </body>
 
 </html>
