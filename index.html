@@ -1,41 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 
-  <head>
-    <title>kris pilcher</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+<head>
+  <title>kris pilcher</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css">
 
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-  </head>
+    #myVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      color: white;
+    }
+
+    .popup-button {
+      margin: 1.5rem 0;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid white;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .popup-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+
+  <script>
+    function openPopup() {
+      window.open(
+        'https://krispykreme.glitch.me/',
+        'krisSitePopup',
+        'width=1000,height=800,resizable=yes,scrollbars=yes'
+      );
+    }
+  </script>
+</head>
+
+<body>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2Fwebfx2.mp4?v=1574055928265" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <h1>KRIS PILCHER</h1>
+    <a href="/XR.html">XR// </a>
+    <a href="/images.html">IRL// </a>
+    <a href="/blog.html">Research Blog// </a>
+    <a href="/Dreams.html">Dreams// </a>
+    <a href="/wishes.html">Wishes// </a>
+    <a href="/video.html">Video// </a>
+    <a href="/curator.html">Curatorial// </a>
+    <a href="/commercial.html">Commercial// </a>
+    <a href="/About.html" target="_blank">About me</a>
+  </div>
+  <button class="popup-button" onclick="openPopup()">MY AI</button>
+</body>
+
 </html>
-
-<video autoplay muted loop width=100% height = 100% id="myVideo">
-  <source src="https://cdn.glitch.com/7ae153fc-835d-4ad5-92fa-43300e19bbce%2Fwebfx2.mp4?v=1574055928265" type="video/mp4">
-</video>
-
-<div class="content">
-  
-  <h1>KRIS PILCHER</h1>
- 
-  
-      <a href="/XR.html">XR// </a>
-      <a href="/images.html">IRL// </a>
-      <a href="/blog.html">Research Blog// </a>
-      <a href="/Dreams.html">Dreams// </a>
-      <a href="/wishes.html">Wishes// </a>
-      <a href="/video.html">Video// </a>
-      <a href="/curator.html">Curatorial// </a>
-      <a href="/commercial.html">Commercial// </a>
-      <a href="/About.html" target="_blank">About me</a>
-   
- 
-</div>
-   
-</html>
-    
